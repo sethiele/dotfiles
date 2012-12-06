@@ -1,0 +1,11 @@
+alias l="ls -la"
+alias ll="ls -la | less"
+alias vssh="ssh vagrant"
+alias flushdns="dscacheutil -flushcache && echo 'DNS Cache geleert'"
+alias be="bundle exec"
+
+### Git Alias ###
+alias gb='git branch'
+alias gba='git branch -a'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
