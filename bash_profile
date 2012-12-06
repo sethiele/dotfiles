@@ -28,3 +28,6 @@ alias gca='git commit -v -a'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Promt design ###
+export PS1="\u@\h - \[\033[0;32m\][\w]\[\033[m\] \n\$ "
