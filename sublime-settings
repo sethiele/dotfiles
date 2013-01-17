@@ -1,17 +1,30 @@
 {
+	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
-	"draw_indent_guides": false,
+	"color_scheme": "Packages/Dayle Rees Color Schemes/Darkside.tmTheme",
+	"draw_indent_guides": true,
 	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		"log/*.log",
+		".DS_Store"
+	],
 	"font_size": 13.0,
 	"highlight_line": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
+	"rulers":
+	[
+		100
+	],
+	"save_on_focus_lost": true,
+	"tab_completion": true,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true
 }
