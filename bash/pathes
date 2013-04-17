@@ -1,7 +1,7 @@
 # Ruby gem Stuff
-export GEM_HOME=${HOME}/.gem/ruby/1.8
-export GEM_PATH=${HOME}/.gem/ruby/1.8
-export PATH=${HOME}/.gem/ruby/1.8/bin:$PATH
+#export GEM_HOME=${HOME}/.gem/ruby/1.8
+#export GEM_PATH=${HOME}/.gem/ruby/1.8
+#export PATH=${HOME}/.gem/ruby/1.8/bin:$PATH
 #export PATH=$PATH:/usr/local/mysql/bin
 
 ### Added by the Heroku Toolbelt
