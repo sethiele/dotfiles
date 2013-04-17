@@ -30,3 +30,8 @@ alias tlog='tail -f log/development'
 #
 alias b="bundle exec $1"
 
+#
+# Apps
+#
+
+alias sourcetree="open -a /Applications/SourceTree.app $1"
