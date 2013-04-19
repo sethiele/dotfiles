@@ -13,3 +13,5 @@ set visualbell		" no piep
 set cmdheight=2		" 2 line Commands
 
 map <F5> :FufFile **/<CR>
+
+execute pathogen#infect()
