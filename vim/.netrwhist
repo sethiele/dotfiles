@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/sthiele/Stuff/Projekte/pinlocker/config/locales'
-let g:netrw_dirhist_2='/Users/sthiele/.ssh/config.d/infopark-intern'
-let g:netrw_dirhist_3='/Users/sthiele/dotfiles/vim/vim'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/sthiele/projects/infoparkdev'
+let g:netrw_dirhist_2='/Users/sthiele/projects/infoparkdev/app'
+let g:netrw_dirhist_3='/Users/sthiele/projects/infoparkdev/app/controllers'
+let g:netrw_dirhist_4='/Users/sthiele/projects/infoparkdev'

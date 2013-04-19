@@ -12,6 +12,13 @@ set laststatus=2	" 2 Status
 set visualbell		" no piep
 set cmdheight=2		" 2 line Commands
 
+:command Tree :NERDTreeFind
+:command TreeN :NERDTree
+let NERDTreeWinSize=64
+let NERDTreeQuitOnOpen=1
+let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.swp$']
+
 map <F5> :FufFile **/<CR>
 
 execute pathogen#infect()
