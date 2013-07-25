@@ -15,7 +15,6 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
@@ -23,7 +22,6 @@
 	[
 		100
 	],
-	"save_on_focus_lost": true,
 	"tab_completion": true,
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true

@@ -6,6 +6,8 @@ alias ll="ls -la | less"
 alias vssh="ssh vagrant"
 alias flushdns="dscacheutil -flushcache && echo 'DNS Cache geleert'"
 alias be="bundle exec"
+alias copy="pbcopy"
+alias ~="cd ~/$1"
 
 #
 # Git Alias
