@@ -15,6 +15,9 @@ set autoindent          " automatisch einrücken
 
 :command Tree :NERDTreeFind
 :command TreeN :NERDTree
+nmap <silent> <C-T> :NERDTreeToggle %<CR>
+nmap ,f :NERDTreeFind<CR>
+nmap ,t :NERDTreeToggle<CR>
 let NERDTreeWinSize=64
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
@@ -32,3 +35,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
+
+
+
