@@ -13,6 +13,8 @@ set visualbell		" no piep
 set cmdheight=2		" 2 line Commands
 set autoindent          " automatisch einrücken
 
+
+" NerdTree
 :command Tree :NERDTreeFind
 :command TreeN :NERDTree
 nmap <silent> <C-T> :NERDTreeToggle %<CR>
@@ -22,6 +24,13 @@ let NERDTreeWinSize=64
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$']
+
+" Tabe
+nnoremap <C-S-Left> :tabprevious<CR>
+nnoremap <C-S-Right> :tabnext<CR>
+nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
+
 
 map <F5> :FufFile **/<CR>
 
