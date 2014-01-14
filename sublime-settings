@@ -10,7 +10,7 @@
 		"log/*.log",
 		".DS_Store"
 	],
-	"font_size": 13.0,
+	"font_size": 11.0,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
