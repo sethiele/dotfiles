@@ -1,0 +1,6 @@
+*~
+.DS_Store
+Guardfile
+newrelic.yml
+.netrwhist
+*.swp

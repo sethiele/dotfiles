@@ -1,5 +1,5 @@
 # git autocomplete
-[[ -s $HOME/git-completion.bash ]] && source $HOME/git-completion.bash
+[[ -s $HOME/git-completion.bash ]] && source $HOME/.git-completion.sh
 
 #Color
 export CLICOLOR=1
