@@ -37,3 +37,4 @@ alias b="bundle exec $1"
 #
 
 alias sourcetree="open -a /Applications/SourceTree.app $1"
+alias hr="~/.bash/hr/hr"
