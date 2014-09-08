@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+wget "$1"
+filename=${1##*/}
+filenamed=${filename%.*}
+gpg "$filename"
+if [ -e "$filenamed" ]; then
+  rm "$filename"
+fi

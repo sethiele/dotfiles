@@ -45,3 +45,5 @@ alias hr="~/.bash/hr/hr"
 #
 
 alias wsend="~/.wsend/wsend"
+alias wsend-gpg='~/.wsend/wsend-gpg'
+alias wget-gpg='~/.wsend/wget-gpg'
