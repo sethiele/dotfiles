@@ -15,3 +15,6 @@ export PS1='\[\033[01;34m\]\u@\h\[\033[00m\] - \e[33m\]\D{%d.%m.%y %T}\[\033[00m
 
 # Editor
 export EDITOR=`which vim`
+
+# aws completion
+complete -C aws_completer aws

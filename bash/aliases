@@ -8,6 +8,7 @@ alias flushdns="dscacheutil -flushcache && echo 'DNS Cache geleert'"
 alias be="bundle exec"
 alias copy="pbcopy"
 alias ~="cd ~/$1"
+alias irb="pry"
 
 #
 # Git Alias
