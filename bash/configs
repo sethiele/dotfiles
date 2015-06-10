@@ -11,7 +11,14 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 eval "$(rbenv init -)"
 
 # Promt design
-export PS1='\[\033[01;34m\]\u@\h\[\033[00m\] - \e[33m\]\D{%d.%m.%y %T}\[\033[00m\] - \[\033[0;32m\][\w]\[\033[m\] \[\033[1;31m\]$(__git_ps1 "- (%s)")\[\033[0m\]\n\$ '
+PS1='\[\033[01;34m\]\u@\h\[\033[00m\] - \e[33m\]\D{%d.%m.%y %T}\[\033[00m\] - \[\033[0;32m\][\w]\[\033[m\] \[\033[1;31m\]$(__git_ps1 "- (%s)")\[\033[00m\] -'
+if [ "\$(type -t __git_ps1)" ]; then
+
+    PS1="$PS1 \[\033[35m\]≺\$(rbenv version-name)≻"
+
+fi
+PS1="$PS1 \[\033[0m\]\n\$ "
+export PS1
 
 # Editor
 export EDITOR=`which vim`

@@ -2,20 +2,22 @@
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Dayle Rees Color Schemes/sublime/earthsong.tmTheme",
+	"color_scheme": "Packages/daylerees-themes/sublime/solarflare.tmTheme",
 	"draw_indent_guides": true,
 	"draw_white_space": "all",
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
 		"log/*.log",
-		".DS_Store"
+		".DS_Store",
+		"vendor/*"
 	],
-	"font_size": 13.0,
+	"font_size": 14.0,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"AdvancedNewFile"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
