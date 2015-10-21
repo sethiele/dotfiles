@@ -47,3 +47,10 @@ alias hr="~/.bash/hr/hr"
 alias wsend="~/.wsend/wsend"
 alias wsend-gpg='~/.wsend/wsend-gpg'
 alias wget-gpg='~/.wsend/wget-gpg'
+
+
+#
+# kill last background process
+#
+
+alias killbill="kill -9 %+"

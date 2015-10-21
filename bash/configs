@@ -21,7 +21,9 @@ PS1="$PS1 \[\033[0m\]\n\$ "
 export PS1
 
 # Editor
-export EDITOR=`which vim`
+#export EDITOR=`which vim`
+export EDITOR="atom -w"
+export BUNDLE_EDITOR=“atom”
 
 # aws completion
 complete -C aws_completer aws
