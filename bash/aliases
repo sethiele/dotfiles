@@ -1,8 +1,8 @@
 #
 # Basic
 #
-alias l="ls -la"
-alias ll="ls -la | less"
+alias l="ls -lah"
+alias ll="ls -lah | less"
 alias vssh="ssh vagrant"
 alias flushdns="dscacheutil -flushcache && echo 'DNS Cache geleert'"
 alias be="bundle exec"

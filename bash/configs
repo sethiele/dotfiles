@@ -27,3 +27,6 @@ export BUNDLE_EDITOR=“atom”
 
 # aws completion
 complete -C aws_completer aws
+
+# aws credential file
+export AWS_CREDENTIAL_FILE=~/.aws/credentials
