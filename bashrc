@@ -1,3 +1,3 @@
-[[ -s $HOME/dotfiles/bash.d/aliases ]] && source $HOME/dotfiles/bash.d/aliases
-[[ -s $HOME/dotfiles/bash.d/pathes ]] && source $HOME/dotfiles/bash.d/pathes
-[[ -s $HOME/dotfiles/bash.d/configs ]] && source $HOME/dotfiles/bash.d/configs
+[[ -s $HOME/.bash.d/aliases ]] && source $HOME/.bash.d/aliases
+[[ -s $HOME/.bash.d/pathes ]] && source $HOME/.bash.d/pathes
+[[ -s $HOME/.bash.d/configs ]] && source $HOME/.bash.d/configs

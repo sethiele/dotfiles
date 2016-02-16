@@ -1,8 +1,10 @@
-# git autocomplete
-GIT_PS1_SHOWDIRTYSTATE=true
-source `brew --prefix`/etc/bash_completion.d/git-prompt.sh
-source `brew --prefix`/etc/bash_completion.d/git-completion.bash
-
+unamestr=`uname`
+# git autocomplete - OSX only
+if [[ "$unamestr" == 'Darwin' ]]; then
+  GIT_PS1_SHOWDIRTYSTATE=true
+  source `brew --prefix`/etc/bash_completion.d/git-prompt.sh
+  source `brew --prefix`/etc/bash_completion.d/git-completion.bash
+fi
 #Color
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
@@ -22,9 +24,9 @@ PS1="$PS1 \[\033[0m\]\n\$ "
 export PS1
 
 # Editor
-#export EDITOR=`which vim`
-export EDITOR="atom -w"
-export BUNDLE_EDITOR=“atom”
+export EDITOR=`which vim`
+#export EDITOR="atom -w"
+#export BUNDLE_EDITOR=“atom”
 
 # aws completion
 complete -C aws_completer aws
