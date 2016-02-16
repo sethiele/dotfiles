@@ -9,11 +9,13 @@ task :setup do
   top_level_dotfiles.each_with_index do |file, index|
     dotfile = File.expand_path("~/#{file}")
     if File.exists?(dotfile)
-      Dir.mkdir(backup_name) unless Dir.exist?(backup_name)
-      FileUtils.mv(dotfile, backup_name)
-      puts "Move #{dotfile} to #{backup_name}"
+      if ENV['sim'].nil?
+        Dir.mkdir(backup_name) unless Dir.exist?(backup_name)
+        FileUtils.mv(dotfile, backup_name)
+      end
+      puts "-> Move #{dotfile} to #{backup_name}"
     end
-    FileUtils.ln_s File.expand_path("../#{top_level_files[index]}", __FILE__), dotfile
-    puts "Link #{dotfile}"
+    FileUtils.ln_s File.expand_path("../#{top_level_files[index]}", __FILE__), dotfile if ENV['sim'].nil?
+    puts "++ Link #{dotfile}"
   end
 end
