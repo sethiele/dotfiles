@@ -17,7 +17,7 @@ set autoindent          " automatisch einrücken
 " NerdTree
 :command Tree :NERDTreeFind
 :command TreeN :NERDTree
-nmap <silent> <C-T> :NERDTreeToggle %<CR>
+nmap <silent> <C-T> :NERDTreeToggle<CR>
 nmap ,f :NERDTreeFind<CR>
 nmap ,t :NERDTreeToggle<CR>
 let NERDTreeWinSize=64
