@@ -18,4 +18,10 @@ task :setup do
     FileUtils.ln_s File.expand_path("../#{top_level_files[index]}", __FILE__), dotfile if ENV['sim'].nil?
     puts "++ Link #{dotfile}"
   end
+
+  puts "Git Submodule init"
+  `git submodule init`
+  puts "Git Submodule update"
+  `git submodule update`
+  puts "Done"
 end
