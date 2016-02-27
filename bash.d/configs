@@ -6,6 +6,11 @@ if [[ "$unamestr" == 'Darwin' ]]; then
   source `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
 
+# git autocomplete - Linux
+if [[ "$unamestr" == 'Linux' ]]; then
+  source /etc/bash_completion.d/git-prompt
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth

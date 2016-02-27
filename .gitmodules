@@ -10,3 +10,9 @@
 [submodule "vim/bundle/gitgutter"]
 	path = vim/bundle/gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "tmux.d/plugins/tmux-copycat"]
+	path = tmux.d/plugins/tmux-copycat
+	url = git@github.com:tmux-plugins/tmux-copycat.git
+[submodule "tmux.d/plugins/tmux-yank"]
+	path = tmux.d/plugins/tmux-yank
+	url = git@github.com:tmux-plugins/tmux-yank.git
