@@ -44,3 +44,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
+
+"Airline
+let g:airline_theme='wombad'
