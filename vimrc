@@ -32,6 +32,7 @@ let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$']
 
 " Tabe
+nnoremap <C-S-T> :tabedit<CR>
 nnoremap <C-S-Left> :tabprevious<CR>
 nnoremap <C-S-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
@@ -53,3 +54,5 @@ highlight Pmenu ctermbg=238 gui=bold
 
 "Airline
 let g:airline_theme='badwolf'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#branch#enabled = 1
