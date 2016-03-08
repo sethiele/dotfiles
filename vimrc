@@ -4,6 +4,7 @@ for f in split(glob('~/.vim/plugin/settings/*.vim'), '\n')
 endfor
 
 " generel settings
+set encoding=utf-8
 set number		" Line Number
 set shiftwidth=2	" Tabstop
 set softtabstop=2
@@ -53,6 +54,7 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 highlight Pmenu ctermbg=238 gui=bold
 
 "Airline
-let g:airline_theme='badwolf'
+let g:airline_theme='papercolor'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
+let g:airline_powerline_fonts = 1
