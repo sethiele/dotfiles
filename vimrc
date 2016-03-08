@@ -1,3 +1,9 @@
+" read configs for plugins
+for f in split(glob('~/.vim/plugin/settings/*.vim'), '\n')
+  exe 'source' f
+endfor
+
+" generel settings
 set number		" Line Number
 set shiftwidth=2	" Tabstop
 set softtabstop=2
@@ -46,4 +52,4 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 highlight Pmenu ctermbg=238 gui=bold
 
 "Airline
-let g:airline_theme='wombad'
+let g:airline_theme='badwolf'
