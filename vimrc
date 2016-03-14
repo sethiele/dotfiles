@@ -1,3 +1,7 @@
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
 " read configs for plugins
 for f in split(glob('~/.vim/plugin/settings/*.vim'), '\n')
   exe 'source' f
@@ -28,6 +32,9 @@ set laststatus=2	" 2 Status
 set visualbell		" no piep
 set cmdheight=2		" 2 line Commands
 set autoindent          " automatisch einrücken
+set incsearch           " Finden schon beim tippen
+set ignorecase          " Ignore case when searching...
+set smartcase           " ...unless we type a capital
 
 
 " NerdTree
@@ -44,8 +51,6 @@ let NERDTreeIgnore = ['\.swp$']
 nnoremap <C-S-T> :tabedit<CR>
 nnoremap <C-S-Left> :tabprevious<CR>
 nnoremap <C-S-Right> :tabnext<CR>
-nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
-nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 
 
 map <F5> :FufFile **/<CR>
@@ -62,7 +67,9 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 highlight Pmenu ctermbg=238 gui=bold
 
 "Airline
-let g:airline_theme='papercolor'
+let g:airline_theme='base16_ashes'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let s:IA = airline#themes#get_highlight('Tabline')
