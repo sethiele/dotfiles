@@ -47,10 +47,22 @@ let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$']
 
-" Tabe
+" Buffer
+" set hidden                              " switch buffer without saving
+" nnoremap <C-T> :enew<CR>                " New Buffer (Tab)
+" nnoremap <C-S-Left> :bprevious<CR>      " Buffer left
+" nnoremap <C-S-Right> :bnext<CR>         " Buffer right
+" nnoremap ,q :bdelete<CR>                " Close Buffer
+"
+" Tab
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': ['<c-t>'],
+  \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+\ }
 nnoremap <C-S-T> :tabedit<CR>
 nnoremap <C-S-Left> :tabprevious<CR>
 nnoremap <C-S-Right> :tabnext<CR>
+let g:airline#extensions#tabline#tab_nr_type = 1  " Tab Number
 
 
 map <F5> :FufFile **/<CR>
