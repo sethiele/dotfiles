@@ -3,7 +3,7 @@
 set nocompatible
 
 " read configs for plugins
-for f in split(glob('~/.vim/plugin/settings/*.vim'), '\n')
+for f in split(glob('~/.vim/config/*.vim'), '\n')
   exe 'source' f
 endfor
 
@@ -55,15 +55,25 @@ let NERDTreeIgnore = ['\.swp$']
 " nnoremap ,q :bdelete<CR>                " Close Buffer
 "
 " Tab
-let g:ctrlp_prompt_mappings = {
-  \ 'AcceptSelection("e")': ['<c-t>'],
-  \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-\ }
 nnoremap <C-S-T> :tabedit<CR>
 nnoremap <C-S-Left> :tabprevious<CR>
 nnoremap <C-S-Right> :tabnext<CR>
 let g:airline#extensions#tabline#tab_nr_type = 1  " Tab Number
 
+" ctrlP
+" Ignore files
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+  \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
+  \}
+" Open Tabs not buffers
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': ['<c-t>'],
+  \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+\ }
+
+" Use the nearest .git directory as the cwd
+let g:ctrlp_working_path_mode = 'ra'
 
 map <F5> :FufFile **/<CR>
 
