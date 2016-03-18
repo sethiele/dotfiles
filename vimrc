@@ -2,6 +2,8 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+let g:mapleader = ','
+
 " read configs for plugins
 for f in split(glob('~/.vim/config/*.vim'), '\n')
   exe 'source' f
@@ -35,30 +37,34 @@ set autoindent          " automatisch einrücken
 set incsearch           " Finden schon beim tippen
 set ignorecase          " Ignore case when searching...
 set smartcase           " ...unless we type a capital
+set list                " Display unprintable characters f12 - switches
+set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars mapping
 
 
 " NerdTree
 :command Tree :NERDTreeFind
 :command TreeN :NERDTree
-nmap ,f :NERDTreeFind<CR>
-nmap ,t :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>t :NERDTreeToggle<CR>
 let NERDTreeWinSize=64
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$']
 
 " Buffer
-" set hidden                              " switch buffer without saving
-" nnoremap <C-T> :enew<CR>                " New Buffer (Tab)
-" nnoremap <C-S-Left> :bprevious<CR>      " Buffer left
-" nnoremap <C-S-Right> :bnext<CR>         " Buffer right
-" nnoremap ,q :bdelete<CR>                " Close Buffer
-"
+set hidden                                  " switch buffer without saving
+nnoremap <C-T> :enew<CR>                    " New Buffer (Tab)
+nnoremap <C-S-Left> :bprevious<CR>          " Buffer left
+nnoremap <C-S-Right> :bnext<CR>             " Buffer right
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>  " Close Buffer
+
+
+
 " Tab
-nnoremap <C-S-T> :tabedit<CR>
-nnoremap <C-S-Left> :tabprevious<CR>
-nnoremap <C-S-Right> :tabnext<CR>
-let g:airline#extensions#tabline#tab_nr_type = 1  " Tab Number
+" nnoremap <C-S-T> :tabedit<CR>
+" nnoremap <C-S-Left> :tabprevious<CR>
+" nnoremap <C-S-Right> :tabnext<CR>
+" let g:airline#extensions#tabline#tab_nr_type = 1  " Tab Number
 
 " ctrlP
 " Ignore files
@@ -67,10 +73,10 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
   \}
 " Open Tabs not buffers
-let g:ctrlp_prompt_mappings = {
-  \ 'AcceptSelection("e")': ['<c-t>'],
-  \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-\ }
+" let g:ctrlp_prompt_mappings = {
+  " \ 'AcceptSelection("e")': ['<c-t>'],
+  " \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+" \ }
 
 " Use the nearest .git directory as the cwd
 let g:ctrlp_working_path_mode = 'ra'
