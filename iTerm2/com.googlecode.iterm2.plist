@@ -641,15 +641,15 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1169 110 445 502 0 0 1680 1027 </string>
+	<string>763 276 445 368 0 0 1680 1027 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>802 495 924 485 0 0 1680 1027 </string>
+	<string>756 495 924 485 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>768 697 384 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 473 592 584 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 560 572 452 0 0 1680 1027 </string>
+	<string>2 145 1678 875 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 385 572 452 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -1940,11 +1940,11 @@
 			<key>Name</key>
 			<string>Blue Component</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>SauceCodePowerline-Semibold 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 12</string>
+			<string>SauceCodePowerline-Semibold 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -2126,7 +2126,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>477819763.236579</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>479126985.32456201</real>
+	<real>479982556.08594501</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2193,7 +2193,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-03-08T09:47:49Z</date>
+	<date>2016-03-17T16:34:27Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>

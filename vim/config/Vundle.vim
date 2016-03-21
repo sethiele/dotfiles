@@ -19,6 +19,8 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'groenewege/vim-less'
 Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'chrisbra/csv.vim'
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

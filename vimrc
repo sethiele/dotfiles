@@ -101,3 +101,7 @@ let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let s:IA = airline#themes#get_highlight('Tabline')
+
+" vim CSV
+hi CSVColumnEven term=bold ctermfg=144 ctermbg=16 guibg=DarkGray
+hi CSVColumnOdd  term=bold ctermfg=16 ctermbg=144 guibg=DarkMagenta
