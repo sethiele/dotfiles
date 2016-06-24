@@ -1,0 +1,6 @@
+bash/bash
+wsend/.id
+wsend/.list
+.backup/*
+*.swp
+gitconfig
