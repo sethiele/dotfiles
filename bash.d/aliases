@@ -1,0 +1,62 @@
+#
+# Basic
+#
+alias l="ls -lah"
+alias ll="ls -lah | less"
+alias vssh="ssh vagrant"
+alias flushdns="dscacheutil -flushcache && echo 'DNS Cache geleert'"
+alias be="bundle exec"
+alias copy="pbcopy"
+alias ~="cd ~/$1"
+alias irb="pry"
+
+#
+# Git Alias
+#
+alias gb='git branch'
+alias gba='git branch -a'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gs='git status'
+
+
+#
+# Rails alias
+#
+alias rs='rails server'
+alias rc='rails console'
+alias rg='rails generate'
+alias tlog='tail -f log/development'
+
+#
+# Bundler alias
+#
+alias b="bundle exec $1"
+
+#
+# Apps
+#
+
+alias sourcetree="open -a /Applications/SourceTree.app $1"
+alias hr="~/.bash/hr/hr"
+
+#
+# wsend
+#
+
+alias wsend="~/.wsend/wsend"
+alias wsend-gpg='~/.wsend/wsend-gpg'
+alias wget-gpg='~/.wsend/wget-gpg'
+
+
+#
+# kill last background process
+#
+
+alias killbill="kill -9 %+"
+
+#
+# sys11
+#
+
+alias msu='sudo managedsoftwareupdate -v'
