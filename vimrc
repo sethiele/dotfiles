@@ -105,3 +105,7 @@ let s:IA = airline#themes#get_highlight('Tabline')
 " vim CSV
 hi CSVColumnEven term=bold ctermfg=144 ctermbg=16 guibg=DarkGray
 hi CSVColumnOdd  term=bold ctermfg=16 ctermbg=144 guibg=DarkMagenta
+
+" no backup for cron
+" http://vim.wikia.com/wiki/Editing_crontab
+autocmd filetype crontab setlocal nobackup nowritebackup
