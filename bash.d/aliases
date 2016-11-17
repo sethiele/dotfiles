@@ -3,12 +3,14 @@
 #
 alias l="ls -lah"
 alias ll="ls -lah | less"
+alias ld="ls -lahd */"
 alias vssh="ssh vagrant"
 alias flushdns="dscacheutil -flushcache && echo 'DNS Cache geleert'"
 alias be="bundle exec"
 alias copy="pbcopy"
 alias ~="cd ~/$1"
 alias irb="pry"
+alias svim="sudo vim"
 
 #
 # Git Alias

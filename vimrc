@@ -39,6 +39,7 @@ set ignorecase          " Ignore case when searching...
 set smartcase           " ...unless we type a capital
 set list                " Display unprintable characters f12 - switches
 set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars mapping
+set backspace=indent,eol,start " Backspace for not typed chars
 
 
 " NerdTree
