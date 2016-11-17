@@ -13,4 +13,4 @@
 [commit]
 	template = /Users/sthiele/.stCommitMsg
 [include]
-        path = ~/.gitconfig_user
+        path = ~/.dotfiles/gitconfig_user
