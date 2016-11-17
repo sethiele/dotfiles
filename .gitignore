@@ -3,4 +3,4 @@ wsend/.id
 wsend/.list
 .backup/*
 *.swp
-gitconfig
+gitconfig_user
