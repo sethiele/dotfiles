@@ -12,5 +12,8 @@
 	ui = auto
 [commit]
 	template = /Users/sthiele/.stCommitMsg
+[user]
+	name = 
+	email = 
 [include]
         path = ~/.dotfiles/gitconfig_user
