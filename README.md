@@ -10,3 +10,8 @@ Readme
 ## Backup
 
 Backupdir: `~/.dotfiles/.backup/TIME`
+
+## Sublime Text Extentions
+
+- https://packagecontrol.io
+- git = https://packagecontrol.io/packages/Git
