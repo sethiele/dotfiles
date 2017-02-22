@@ -24,7 +24,8 @@ set number		" Line Number
 set shiftwidth=2	" Tabstop
 set softtabstop=2
 set expandtab
-set background=light    " Switch this to dark for dark terminals
+set background=dark" Switch this to dark for dark terminals
+set t_Co=256
 syntax on		" Syntax
 set hlsearch		" Highlite Search
 set ignorecase
