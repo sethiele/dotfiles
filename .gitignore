@@ -4,3 +4,4 @@ wsend/.list
 .backup/*
 *.swp
 gitconfig_user
+vim/bundle/*
