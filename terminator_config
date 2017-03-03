@@ -1,0 +1,32 @@
+[global_config]
+  enabled_plugins = CustomCommandsMenu, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  homogeneous_tabbar = False
+  scroll_tabbar = True
+  title_hide_sizetext = True
+[keybindings]
+  close_term = <Primary>w
+  split_horiz = <Primary>h
+  split_vert = <Primary>v
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+      size = 900, 600
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#1c1c1c"
+    background_image = None
+    copy_on_selection = True
+    cursor_color = "#e2bbef"
+    font = Hack 10
+    foreground_color = "#ddeedd"
+    icon_bell = False
+    use_system_font = False
+    visible_bell = True
+    palette = "#3d352a:#cd5c5c:#86af80:#e8ae5b:#6495ed:#deb887:#b0c4de:#bbaa99:#554444:#cc5533:#88aa22:#ffa75d:#87ceeb:#996600:#b0c4de:#ddccbb"
