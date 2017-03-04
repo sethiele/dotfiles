@@ -1,0 +1,5 @@
+# HISTORY
+HISTSIZE=10000
+SAVEHIST=9000
+HIST_STAMPS="dd.mm.yyyy"
+HISTFILE=~/.zsh_history
