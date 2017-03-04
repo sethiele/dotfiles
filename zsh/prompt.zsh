@@ -88,7 +88,7 @@ function _update_ruby_version() {
     if which rvm-prompt &> /dev/null; then
       ruby_version="$(rvm-prompt i v g)"
     else
-      if which rbenv &> /dev/null; then
+      if [ -d $HOME/.rbenv ]; then
         ruby_version="$(rbenv version | sed -e "s/ (set.*$//")"
       fi
     fi
@@ -104,5 +104,4 @@ ${PR_GREEN}%n%{$reset_color%} %{$FG[239]%}at%{$reset_color%} ${PR_BOLD_BLUE}$(bo
 $(prompt_char) '
 
 export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r$reset_color [(y)es (n)o (a)bort (e)dit]? "
-
-RPROMPT='${PR_GREEN}$(virtualenv_info)%{$reset_color%} ${PR_RED}${ruby_version}%{$reset_color%}
+RPROMPT='${PR_GREEN}$(virtualenv_info)%{$reset_color%} ${PR_RED}${ruby_version}%{$reset_color%} ⌚ ${PR_BLUE}%*%{$reset_color%}'

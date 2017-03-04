@@ -19,7 +19,7 @@ export ARCHFLAGS='-arch x86_64'
 
 export LESS='--ignore-case --raw-control-chars'
 export PAGER='less'
-export EDITOR='subl -w'
+export EDITOR='vim'
 
 export LANG=de_DE.UTF-8
 
