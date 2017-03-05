@@ -1,9 +1,10 @@
+source $HOME/.oh-my-zsh/lib/git.zsh
 source ~/.zsh/checks.zsh
 source ~/.zsh/colors.zsh
 source ~/.zsh/setopt.zsh
 source ~/.zsh/exports.zsh
 source ~/.zsh/prompt.zsh
-#source ~/.zsh/completion.zsh
+source ~/.zsh/completion.zsh
 source ~/.zsh/aliases.zsh
 #source ~/.zsh/bindkeys.zsh
 #source ~/.zsh/functions.zsh
