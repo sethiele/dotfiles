@@ -151,3 +151,6 @@ alias nomz='ps aux | less'
 alias nomnom='killall'
 alias cya='reboot'
 alias kthxbai='halt'
+
+
+alias flushdns="dscacheutil -flushcache && echo 'DNS Cache geleert'"

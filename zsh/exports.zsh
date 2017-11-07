@@ -32,3 +32,6 @@ export LANG=de_DE.UTF-8
 
 #Virtual Environment Stuff
 export PROJECT_HOME=$HOME/projekte
+
+# Java Home
+export JAVA_HOME=$(/usr/libexec/java_home)
