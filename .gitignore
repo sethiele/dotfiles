@@ -5,3 +5,4 @@ wsend/.list
 *.swp
 gitconfig_user
 vim/bundle/*
+gitconfig

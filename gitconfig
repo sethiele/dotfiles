@@ -13,7 +13,7 @@
 [commit]
 	template = /Users/sthiele/.stCommitMsg
 [user]
-	name = 
-	email = 
+	name = Sebastian Thiele
+	email = sebastian+git@thiele.me
 [include]
         path = ~/.dotfiles/gitconfig_user

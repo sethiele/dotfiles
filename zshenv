@@ -6,10 +6,10 @@ fi
 
 # if rbenv is present, configure it for use
 #if which rbenv &> /dev/null; then
-if [ -d $HOME/.rbenv ]; then
+#if [ -d $HOME/.rbenv ]; then
     # Put the rbenv entry at the front of the line
     export PATH="$HOME/.rbenv/bin:$PATH"
 
     # enable shims and auto-completion
     eval "$(rbenv init -)"
-fi
+#fi
