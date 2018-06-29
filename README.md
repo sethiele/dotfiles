@@ -15,3 +15,6 @@ Backupdir: `~/.dotfiles/.backup/TIME`
 
 - https://packagecontrol.io
 - git = https://packagecontrol.io/packages/Git
+
+## Fonts (Vim)
+https://github.com/powerline/fonts
