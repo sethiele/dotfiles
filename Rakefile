@@ -2,7 +2,7 @@ require 'fileutils'
 
 desc "Create symlinks for all versioned files in $HOME"
 task :setup do
-  dotfiles = `git ls-files [a-z]*`.split
+  dotfiles = `git ls-files [a-zA-Z]*`.split
   top_level_files = dotfiles.map{|path| path.gsub(/\/.*/, '') }.uniq
   top_level_dotfiles = top_level_files.map{|f| ".#{f}"}
   backup_name = "#{File.expand_path File.dirname(__FILE__)}/.backup/#{Time.now.strftime "%Y-%m-%d_%H-%M-%S"}/"
