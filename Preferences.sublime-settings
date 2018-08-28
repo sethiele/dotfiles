@@ -1,0 +1,30 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Colorsublime-Themes/Solarflare.tmTheme",
+	"draw_indent_guides": true,
+	"draw_white_space": "all",
+	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		"log/*.log",
+		".DS_Store",
+		"vendor/*"
+	],
+	"font_size": 11.0,
+	"highlight_line": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"rulers":
+	[
+	],
+	"tab_completion": true,
+	"tab_size": 4,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

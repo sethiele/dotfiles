@@ -1,7 +1,7 @@
 ##
 # Brewfile by Sebastian Thiele
 # based on https://github.com/joelparkerhenderson/brewfile/blob/master/Brewfile
-# 
+#
 # ## Taps
 tap 'homebrew/bundle'
 tap 'homebrew/core'
@@ -62,7 +62,7 @@ brew 'wget'
 
 ##
 # Version control
-## 
+##
 
 # git
 brew 'git'
@@ -106,6 +106,10 @@ cask '1password'
 # Timer App
 cask 'alinof-timer'
 
+cask "android-file-transfer"
+
+cask "skype"
+
 ##
 # Development
 ##
@@ -119,4 +123,5 @@ brew 'readline'
 brew 'sqlite'
 brew 'python'
 brew 'ruby'
-
+cask 'vagrant'
+cask 'virtualbox'

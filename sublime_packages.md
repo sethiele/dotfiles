@@ -1,0 +1,7 @@
+* [AdvancedNewFile](https://packagecontrol.io/packages/AdvancedNewFile)
+* [Colorsublime-Themes]()
+* [Emmet](https://packagecontrol.io/packages/Emmet)
+* [Package Control](https://packagecontrol.io/)
+* [Pretty JSON](https://packagecontrol.io/packages/Pretty%20JSON)
+* [PyV8]()
+* [TOML](https://packagecontrol.io/packages/TOML)
