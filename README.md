@@ -1,34 +1,68 @@
 # Dotfiles
 
-These are the dotfiles I use.
-They are [managed with stow](http://web.archive.org/web/20171007000027/https://taihen.org/managing-dotfiles-with-gnu-stow/).
+Meine persoenliche Dotfiles-Sammlung, verwaltet mit [GNU stow](https://www.gnu.org/software/stow/).
+Stow erstellt Symlinks aus den Unterverzeichnissen in das Home-Verzeichnis.
 
-## Setup
+## Verzeichnisse
 
-This guide assumes you're running OSX.
+| Verzeichnis | Symlink-Ziel | Beschreibung                                              |
+| ----------- | ------------ | --------------------------------------------------------- |
+| `brew/`     | —            | Homebrew Bundle: alle Pakete, Casks und VS Code Extensions |
+| `git/`      | `~/`         | Globale Git-Konfiguration (`.gitconfig`, `.gitignore_global`, ...) |
+| `ssh/`      | `~/`         | SSH-Konfiguration inkl. `config.d/`-Struktur und 1Password-Agent |
 
-1. Install [stow](https://www.gnu.org/software/stow/):
+## Setup auf einem neuen Mac
 
-   ```bash
-   brew install stow
-   ```
+### 1. Xcode Command Line Tools installieren
 
-2. To selectively install configuration files (e.g. Bash), just do:
+```bash
+xcode-select --install
+```
 
-   ```bash
-   cd ~/dotfiles
-   stow bash
-   ```
+### 2. Homebrew installieren
 
-3. To restow a modified configuration, just do:
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-   ```bash
-   cd ~/dotfiles
-   stow -R bash
-   ```
+### 3. Repository klonen
 
-## TODO
+```bash
+git clone <repo-url> ~/.dotfiles
+cd ~/.dotfiles
+```
 
-- [ ] Simple Installation
+### 4. Pakete installieren
 
-This README based on [awendt/dotfiles/README.md](https://github.com/awendt/dotfiles/blob/main/README.md)
+```bash
+brew bundle install --file=brew/Brewfile --no-upgrade
+```
+
+### 5. Dotfiles verlinken (stow)
+
+```bash
+stow git
+stow ssh
+```
+
+### 6. Nicht versionierte Dateien manuell anlegen
+
+Einige Dateien sind per `.gitignore` ausgeschlossen und muessen manuell erstellt werden:
+
+- **SSH-Schluessel**: `~/.ssh/id_ed25519` etc. (aus Backup oder neu generieren)
+- **SSH Host-Configs**: `~/.ssh/config.d/01_private`, `02_proxmox` etc.
+- **Git-User-Configs**: `~/.gitconfig-private` und `~/.gitconfig-work` (siehe `git/README.md`)
+
+## Dotfile aktualisieren
+
+Einzelnes Verzeichnis neu verlinken nach Aenderungen:
+
+```bash
+stow -R git
+```
+
+## Weiterfuehrendes
+
+- [git/README.md](git/README.md) — Details zur Git-Konfiguration und konditionellen Includes
+- [ssh/README.md](ssh/.ssh/README.md) — Details zur SSH-Konfiguration und 1Password-Agent
+- [brew/README.md](brew/README.md) — Details zum Brewfile und Verwendung

@@ -1,1 +1,7 @@
 git/.gitconfig-*
+/ssh/.ssh/id_*
+/ssh/.ssh/known_hosts*
+/ssh/.ssh/agent/*
+/ssh/.ssh/config.d/*
+!/ssh/.ssh/config.d/00_all
+CLAUDE.md
