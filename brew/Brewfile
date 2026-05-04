@@ -1,0 +1,65 @@
+brew "ansible"
+brew "curl"
+brew "git"
+brew "hugo"
+brew "lftp"
+brew "stow"
+brew "markdownlint-cli2"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
+# Application launcher and productivity software
+cask "alfred"
+cask "balenaetcher"
+# 3D model slicing software for 3D printers, maintained by Bambu Lab
+cask "bambu-studio"
+# Build, render, and create LEGO instructions
+cask "bricklink-studio"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# E-books management software
+cask "calibre"
+# FTP Client
+cask "cyberduck"
+cask "drawio"
+# Web browser
+cask "firefox"
+# Web browser
+cask "google-chrome"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Discover, download, and run local LLMs
+cask "lm-studio"
+# Mgt Software für Logitech Tastatur + Maus
+cask "logi-options+"
+# Online collaborative whiteboard platform
+cask "miro"
+# App zum Verwalten von Konten
+cask "moneymoney"
+cask "obsidian"
+cask "podman-desktop"
+cask "protonvpn"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Instant messaging application focusing on security
+cask "signal"
+# Graphical client for Git version control
+cask "sourcetree"
+# Sync and backup service to Synology NAS drives
+cask "synology-drive"
+# Open-source code editor
+cask "visual-studio-code"
+vscode "anthropic.claude-code"
+vscode "be5invis.toml"
+vscode "davidanson.vscode-markdownlint"
+vscode "editorconfig.editorconfig"
+vscode "github.vscode-github-actions"
+vscode "hackmd.vscode-hackmd"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.remote-explorer"
+vscode "rusnasonov.vscode-hugo"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "streetsidesoftware.code-spell-checker-german"
+vscode "yzhang.markdown-all-in-one"
