@@ -1,0 +1,25 @@
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+[core]
+	excludesfile = ~/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+    name = Sebastian
+[includeIf "gitdir:~/projects/work/"]
+    path = ~/.gitconfig-work
+[includeIf "gitdir:~/projects/private/"]
+    path = ~/.gitconfig-private
+[includeIf "gitdir:~/.dotfiles/"]
+    path = ~/.gitconfig-private
+[commit]
+	template = ~/.stCommitMsg
+[init]
+	defaultBranch = main
